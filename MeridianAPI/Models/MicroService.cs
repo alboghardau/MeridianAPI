@@ -10,6 +10,7 @@ namespace MeridianAPI.Models
         public string Token { get; set; }
         public string Name { get; set; }
         public bool IsAlive { get; set; }
+        public List<String> APIPaths { get; set; }
 
     }
 }
