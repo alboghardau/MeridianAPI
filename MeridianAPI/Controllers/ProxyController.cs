@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MeridianAPI.Controllers
 {
-    public class GenericController : ControllerBase
+    public class ProxyController : ControllerBase
     {
 
 
