@@ -10,8 +10,7 @@ namespace MeridianAPI.Utils
         /// <summary>
         /// Generates random token
         /// </summary>
-        /// <param name="length"></param>
-        /// <returns></returns>
+        /// <param name="length">Length of string to be return</param>
         public static string GenerateToken(int length)
         {
             Random random = new Random();
