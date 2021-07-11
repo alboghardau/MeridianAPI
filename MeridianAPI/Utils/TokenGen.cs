@@ -7,6 +7,18 @@ namespace MeridianAPI.Utils
 {
     public class TokenGen
     {
+        /// <summary>
+        /// Generates random token
+        /// </summary>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        public static string GenerateToken(int length)
+        {
+            Random random = new Random();
 
+            string chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+
+            return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
+        }
     }
 }
